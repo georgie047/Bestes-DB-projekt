@@ -8,22 +8,36 @@
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="${contextPath}/css/main.css" />
-        <title>Weinverwaltung</title>
+        <title>Futurama</title>
     </head>
     <body>
-        <h1>Weindatenbank mit Webanbindung</h1>
-        <ul>
-          <li><a href="weine.jsp">Weine suchen</a>: JSP mit JSTL
-            <ul><li>
-            <a href="weine_no_jstl.jsp">alternative Implementierung ohne JSTL</a> 
-            und damit einigem Java Code im JSP zwecks Vergleich &ndash; 
-            Java Code in JSPs wird generell aber als schlechter Programmierstil
-            betrachtet und sollte möglichst vermieden werden.
-              </li></ul>
-          </li>
-          <li><a href="neuer-wein.jsp">Wein anlegen</a>: JSP Seite mit Servlet, 
-            das die Anfrage abarbeitet und dann an ein JSP zur Darstellung des 
-            Ergebnisses weiterleitet.</li>
-        </ul>
+
+        <div class="Headline">
+            <h3>Raumschiffgesellschafts Portal Futurama</h3>
+        </div>
+        
+        <div class="Main">                
+            <h4>In Progress: Raumschiffgesellschafts Portal</h4>
+            <ul>
+                <li><a href="index.jsp">Anmelden</a></li>
+                <li><a href="index.jsp">Meine Flüge</a></li>
+                <li><a href="index.jsp">Registrieren</a></li>
+                <li><a href="index.jsp">Flüge suchen</a></li>
+                <li><a href="FlügeBuchen.jsp">Flüge buchen</a></li>
+                <br>
+                <li><a href="Webpage_Template.jsp">Webpage Example</a></li>
+            </ul> 
+            
+            <br>
+            <br>
+            
+            <h4>Depricated: Weindatenbank mit Webanbindung</h4>
+            <ul>
+                <li><a href="weine.jsp">Weine suchen</a></li>
+                <li><a href="neuer-wein.jsp">Weine einfügen (JSTL)</a></li>
+                <li><a href="weine_no_jstl.jsp">Weine einfügen (No JSTL)</a></li>
+            </ul>
+
+        </div>
     </body>
 </html>
