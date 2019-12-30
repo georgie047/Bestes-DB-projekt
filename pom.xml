@@ -2,11 +2,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.froihofer</groupId>
-    <artifactId>dbs-weine</artifactId>
+    <artifactId>dbs-fluege</artifactId>
     <version>1.2</version>
     <packaging>war</packaging>
 
-    <name>dbs-weine</name>
+    <name>dbs-fluege</name>
 
     <scm>
       <developerConnection>scm:hg:file:///D:/data/Teaching/Code-Beispiele/dbs-weine</developerConnection>

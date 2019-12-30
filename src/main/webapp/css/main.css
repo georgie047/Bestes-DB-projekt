@@ -39,3 +39,8 @@ div.Headline {
   padding: 10px;
   padding-left: 50px;
 }
+
+div.BuchenForm{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
