@@ -1,16 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/dbs-fluege">
-    <Resource name="jdbc/FluegeDB" auth="Container" type="javax.sql.DataSource"
-    username="root" password="qaysedc#" 
-    driverClassName="com.mysql.jdbc.Driver"
-    url="jdbc:mysql://localhost/dbs_spacetravel?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=CET" 
-    maxTotal="8" maxIdle="4"
-    testOnBorrow="true" validationQuery="SELECT 1 FROM flug LIMIT 1"/>
-    
-    <Resource name="jdbc/WeineDB" auth="Container" type="javax.sql.DataSource"
-        username="root" password="qaysedc#" 
-        driverClassName="com.mysql.jdbc.Driver"
-    	url="jdbc:mysql://localhost/dbs_weine?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=CET" 
-    	maxTotal="8" maxIdle="4"
-    testOnBorrow="true" validationQuery="SELECT 1 FROM Weine LIMIT 1"/>
-</Context>
+<Context antiJARLocking="true" path="/dbs-fluege"/>

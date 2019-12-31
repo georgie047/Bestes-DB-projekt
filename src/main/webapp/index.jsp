@@ -18,19 +18,6 @@
         </div>
 
         <div class="Main">        
-            <p style="color: black;">DB Test: </p>
-        <sql:setDataSource dataSource="jdbc/FluegeDB" />   
-        <sql:query var="fluege" sql="SELECT 1 FROM flug" />
-        <c:if test="${fluege.rowCount == NULL}">
-          <p style="color: red;">DB Test Failed!</p>
-        </c:if>
-       <c:if test="${fluege.rowCount <= 0}">
-          <p style="color: red;">Database is Empty!</p>
-        </c:if>
-        <c:if test="${fluege.rowCount > 0}">
-          <p style="color: black;">DB Test Succeeded!</p>
-        </c:if>        
-        
                 
             <h4>In Progress: Raumschiffgesellschafts Portal</h4>
             <ul>
@@ -40,7 +27,7 @@
                 <li><a href="index.jsp">Flüge suchen</a></li>
                 <li><a href="Fluege-Buchen.jsp">Flüge buchen</a></li>
                 <br>
-                <li><a href="Webpage_Template.jsp">Webpage Example</a></li>
+                <li><a href="Webpage_Template.jsp">Webpage Example / Tutorial: Pls Read First</a></li>
             </ul> 
             
             <br>
