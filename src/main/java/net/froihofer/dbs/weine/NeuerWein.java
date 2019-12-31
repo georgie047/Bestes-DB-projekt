@@ -27,7 +27,8 @@ import org.slf4j.LoggerFactory;
  *
  * @author Lorenz Froihofer
  * @version $Id: NeuerWein.java 1:3d18a343f773 2012/12/02 01:44:16 Lorenz Froihofer $
- */
+**/
+
 public class NeuerWein extends HttpServlet {
 
   private static final Logger log = LoggerFactory.getLogger(NeuerWein.class);

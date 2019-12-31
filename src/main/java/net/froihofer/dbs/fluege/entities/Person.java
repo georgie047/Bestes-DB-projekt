@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Entity
-@Table(name="passagier")
+@Table(name="person")
 public class Person implements Serializable {
   private static final Logger log = LoggerFactory.getLogger(Person.class);
 

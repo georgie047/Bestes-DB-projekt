@@ -8,7 +8,7 @@ import javax.persistence.Table;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Date;
+import java.sql.Date;
 
 @Entity
 @Table(name="bucht")
@@ -19,16 +19,16 @@ public class Buchung implements Serializable {
   @GeneratedValue
   private Integer buchungsNr;
   private Integer klasse;
-  private Date Buchungsdatum;
+  private Date buchungsdatum;
   private Integer SVNr;
   private Integer FlugNr;
   
   //No arguments constructor required for entity class
   public Buchung(){}
   
-  public Buchung(Integer klasse, Date Buchungsdatum, Integer SVNr, Integer FlugNr) {
+  public Buchung(Integer klasse, Date buchungsdatum, Integer SVNr, Integer FlugNr) {
     this.klasse = klasse;
-    this.Buchungsdatum = Buchungsdatum;
+    this.buchungsdatum = buchungsdatum;
     this.SVNr = SVNr;
     this.FlugNr = FlugNr;
   }
@@ -46,11 +46,11 @@ public class Buchung implements Serializable {
   }
 
   public Date getBuchungsdatum() {
-    return Buchungsdatum;
+    return buchungsdatum;
   }
 
-  public void setBuchungsdatum(Date Buchungsdatum) {
-    this.Buchungsdatum = Buchungsdatum;
+  public void setBuchungsdatum(Date buchungsdatum) {
+    this.buchungsdatum = buchungsdatum;
   }  
 
   public Integer getSVNr() {

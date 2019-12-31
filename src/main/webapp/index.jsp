@@ -2,6 +2,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 
 <html>
     <head>
@@ -15,8 +16,22 @@
         <div class="Headline">
             <h3>Raumschiffgesellschafts Portal Futurama</h3>
         </div>
+
+        <div class="Main">        
+            <p style="color: black;">DB Test: </p>
+        <sql:setDataSource dataSource="jdbc/FluegeDB" />   
+        <sql:query var="fluege" sql="SELECT 1 FROM flug" />
+        <c:if test="${fluege.rowCount == NULL}">
+          <p style="color: red;">DB Test Failed!</p>
+        </c:if>
+       <c:if test="${fluege.rowCount <= 0}">
+          <p style="color: red;">Database is Empty!</p>
+        </c:if>
+        <c:if test="${fluege.rowCount > 0}">
+          <p style="color: black;">DB Test Succeeded!</p>
+        </c:if>        
         
-        <div class="Main">                
+                
             <h4>In Progress: Raumschiffgesellschafts Portal</h4>
             <ul>
                 <li><a href="index.jsp">Anmelden</a></li>

@@ -13,4 +13,20 @@
       <property name="hibernate.format_sql" value="true"/>
     </properties>
   </persistence-unit>
+
+ <persistence-unit name="dbs-fluege">
+    <!--provider>org.hibernate.ejb.HibernatePersistence</provider-->
+    <non-jta-data-source>java:/comp/env/jdbc/FluegeDB</non-jta-data-source>
+    <class>net.froihofer.dbs.fluege.entities.Buchung</class>
+    <class>net.froihofer.dbs.fluege.entities.Flug</class>
+    <class>net.froihofer.dbs.fluege.entities.Passagier</class>
+    <class>net.froihofer.dbs.fluege.entities.Person</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect"/>
+      <property name="hibernate.hbm2ddl.auto" value="validate"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+    </properties>
+  </persistence-unit>
 </persistence>

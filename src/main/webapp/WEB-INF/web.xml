@@ -5,6 +5,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
           
+
   <servlet>
     <servlet-name>NeuerWein</servlet-name>
     <servlet-class>net.froihofer.dbs.weine.NeuerWein</servlet-class>
@@ -12,6 +13,15 @@
   <servlet-mapping>
     <servlet-name>NeuerWein</servlet-name>
     <url-pattern>/NeuerWein</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>FluegeBuchen</servlet-name>
+    <servlet-class>net.froihofer.dbs.fluege.FluegeBuchen</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FluegeBuchen</servlet-name>
+    <url-pattern>/FluegeBuchen</url-pattern>
   </servlet-mapping>
   
   <!-- Welcome files -->
